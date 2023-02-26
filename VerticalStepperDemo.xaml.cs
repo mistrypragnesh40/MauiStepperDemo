@@ -19,4 +19,9 @@ public partial class VerticalStepperDemo : ContentPage
         if (stepperView.CurrentStep > 0)
             stepperView.CurrentStep -= 1;
     }
+
+    private void stepperView_OnStepTapped(object sender, int e)
+    {
+        stepperView.CurrentStep = e;
+    }
 }

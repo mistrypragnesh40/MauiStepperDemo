@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:stepper="clr-namespace:MauiStepper.Views;assembly=MauiStepper"
+             xmlns:mauiStepper="clr-namespace:MauiStepper.Views;assembly=MauiStepper"
              x:Class="MauiStepperDemo.HorizontalStepperDemo"
              Title="HorizontalStepperDemo">
     <VerticalStackLayout Padding="10">
-        <stepper:HorizontalStepperView x:Name="stepperView" OnStepContinue="stepperView_OnStepContinue" OnStepCancel="stepperView_OnStepCancel">
-            <stepper:HorizontalStepperView.Steps>
-                <stepper:HorizontalStepView Title="Step 1">
-                    <stepper:HorizontalStepView.Content>
+        <mauiStepper:HorizontalStepperView x:Name="stepperView" >
+            <mauiStepper:HorizontalStepperView.Steps>
+                <mauiStepper:HorizontalStepView Title="Step 1">
+                    <mauiStepper:HorizontalStepView.Content>
                         <VerticalStackLayout>
                             <Label Text="Description 1" />
                             <Label Text="Description 2" />
@@ -16,11 +16,11 @@
                             <Label Text="Description 4" />
                             <Label Text="Description 5" />
                         </VerticalStackLayout>
-                    </stepper:HorizontalStepView.Content>
-                </stepper:HorizontalStepView>
+                    </mauiStepper:HorizontalStepView.Content>
+                </mauiStepper:HorizontalStepView>
 
-                <stepper:HorizontalStepView Title="Step 2">
-                    <stepper:HorizontalStepView.Content>
+                <mauiStepper:HorizontalStepView Title="Step 2">
+                    <mauiStepper:HorizontalStepView.Content>
                         <VerticalStackLayout>
                             <Label Text="Description 1" />
                             <Label Text="Description 2" />
@@ -28,11 +28,11 @@
                             <Label Text="Description 4" />
                             <Label Text="Description 5" />
                         </VerticalStackLayout>
-                    </stepper:HorizontalStepView.Content>
-                </stepper:HorizontalStepView>
+                    </mauiStepper:HorizontalStepView.Content>
+                </mauiStepper:HorizontalStepView>
 
-                <stepper:HorizontalStepView Title="Step 3">
-                    <stepper:HorizontalStepView.Content>
+                <mauiStepper:HorizontalStepView Title="Step 3">
+                    <mauiStepper:HorizontalStepView.Content>
                         <VerticalStackLayout>
                             <Label Text="Description 1" />
                             <Label Text="Description 2" />
@@ -40,10 +40,10 @@
                             <Label Text="Description 4" />
                             <Label Text="Description 5" />
                         </VerticalStackLayout>
-                    </stepper:HorizontalStepView.Content>
-                </stepper:HorizontalStepView>
-            </stepper:HorizontalStepperView.Steps>
+                    </mauiStepper:HorizontalStepView.Content>
+                </mauiStepper:HorizontalStepView>
+            </mauiStepper:HorizontalStepperView.Steps>
             
-        </stepper:HorizontalStepperView>
+        </mauiStepper:HorizontalStepperView>
     </VerticalStackLayout>
 </ContentPage>
