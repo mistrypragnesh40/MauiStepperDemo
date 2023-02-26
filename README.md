@@ -1,9 +1,9 @@
 # Plugin.Maui.Stepper
-Plugin.Maui.Popup - is a cross-platform plugin for .NET MAUI ,Used to display progress through a sequence of steps.
+Plugin.Maui.Stepper - is a cross-platform plugin for .NET MAUI ,Used to display progress through a sequence of steps.
 
 
 ## How To Use 
-Available on NuGet: https://www.nuget.org/packages/Plugin.Maui.Stepper/1.0.4  
+Available on NuGet: https://www.nuget.org/packages/Plugin.Maui.Stepper/1.0.3  
 
 Install this Plugin in your .NET MAUI Project
 
