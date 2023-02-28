@@ -5,7 +5,7 @@
              x:Class="MauiStepperDemo.HorizontalStepperDemo"
              Title="HorizontalStepperDemo">
     <VerticalStackLayout Padding="10">
-        <mauiStepper:HorizontalStepperView x:Name="stepperView" >
+        <mauiStepper:HorizontalStepperView x:Name="stepperView"  OnStepContinue="stepperView_OnStepContinue" OnStepCancel="stepperView_OnStepCancel">
             <mauiStepper:HorizontalStepperView.Steps>
                 <mauiStepper:HorizontalStepView Title="Step 1">
                     <mauiStepper:HorizontalStepView.Content>
