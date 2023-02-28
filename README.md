@@ -102,4 +102,60 @@ Define Style for label or Button in your content page or in styles.xaml file & u
 
   <mauiStepper:VerticalStepperView x:Name="stepperView"  CancelButtonStyle="{x:StaticResource btnCancelStyle}">
 ```
+## Horizontal Stepper View
+```
+  <mauiStepper:HorizontalStepperView x:Name="stepperView"  OnStepContinue="stepperView_OnStepContinue" OnStepCancel="stepperView_OnStepCancel">
+            <mauiStepper:HorizontalStepperView.Steps>
+                <mauiStepper:HorizontalStepView Title="Step 1">
+                    <mauiStepper:HorizontalStepView.Content>
+                        <VerticalStackLayout>
+                            <Label Text="Description 1" />
+                            <Label Text="Description 2" />
+                            <Label Text="Description 3" />
+                            <Label Text="Description 4" />
+                            <Label Text="Description 5" />
+                        </VerticalStackLayout>
+                    </mauiStepper:HorizontalStepView.Content>
+                </mauiStepper:HorizontalStepView>
 
+                <mauiStepper:HorizontalStepView Title="Step 2">
+                    <mauiStepper:HorizontalStepView.Content>
+                        <VerticalStackLayout>
+                            <Label Text="Description 1" />
+                            <Label Text="Description 2" />
+                            <Label Text="Description 3" />
+                            <Label Text="Description 4" />
+                            <Label Text="Description 5" />
+                        </VerticalStackLayout>
+                    </mauiStepper:HorizontalStepView.Content>
+                </mauiStepper:HorizontalStepView>
+
+                <mauiStepper:HorizontalStepView Title="Step 3">
+                    <mauiStepper:HorizontalStepView.Content>
+                        <VerticalStackLayout>
+                            <Label Text="Description 1" />
+                            <Label Text="Description 2" />
+                            <Label Text="Description 3" />
+                            <Label Text="Description 4" />
+                            <Label Text="Description 5" />
+                        </VerticalStackLayout>
+                    </mauiStepper:HorizontalStepView.Content>
+                </mauiStepper:HorizontalStepView>
+            </mauiStepper:HorizontalStepperView.Steps>
+```
+
+## Code Behind 
+
+```
+   private void stepperView_OnStepContinue(object sender, EventArgs e)
+    {
+        if (stepperView.Steps.Count > stepperView.CurrentStep)
+            stepperView.CurrentStep += 1;
+    }
+
+    private void stepperView_OnStepCancel(object sender, EventArgs e)
+    {
+        if (stepperView.CurrentStep > 0)
+            stepperView.CurrentStep -= 1;
+    }
+```
