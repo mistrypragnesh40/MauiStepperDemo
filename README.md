@@ -2,6 +2,8 @@
 Plugin.Maui.Stepper - is a cross-platform plugin for .NET MAUI ,Used to display progress through a sequence of steps.
 
 
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/47309472/221900017-4490f0cc-7bbd-4278-999c-b0b8adf3cb2f.gif)
+
 ## How To Use 
 Available on NuGet: https://www.nuget.org/packages/Plugin.Maui.Stepper/1.0.3  
 
@@ -88,7 +90,7 @@ CancelButtonStyle: used for setting cancel button style.
 ```
 
 ## How to Use Style Property
-Define Style for label or Button in your content page or in styles.xaml file & used in vertical stepper view.
+Define Style for label or Button in your content page or in styles.xaml file & use in vertical stepper view.
 ```
  <ContentPage.Resources>
         <ResourceDictionary>
